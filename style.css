@@ -1,0 +1,36 @@
+body{
+font-family: Arial, sans-serif;
+background: linear-gradient(135deg,#2E8B57);
+color:white;
+text-align:center;
+padding:40px;
+}
+
+h1{
+font-size:40px;
+text-shadow:3px 3px 0 #000000,5px 3px 0 #4F4F4F
+}
+
+p{
+font-size:19px;
+max-width:600px;
+margin:auto;
+}
+
+button{
+background:orange;
+color:#723a00;
+border:none;
+padding:12px 25px;
+border-radius:10px;
+font-size:16px;
+cursor:pointer;
+margin-top:20px
+}
+
+canvas{
+background:white;
+padding:20px;
+border-radius:15px;
+margin-top:30px;
+}

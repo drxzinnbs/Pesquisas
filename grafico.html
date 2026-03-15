@@ -1,0 +1,55 @@
+<h1>Diferença salarial entre homens e mulheres</h1>
+
+<canvas id="grafico"></canvas>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+const ctx = document.getElementById('grafico');
+
+new Chart(ctx, {
+  type: 'line',
+  data: {
+    labels: ['2021','2022','2023','2024','2025','2026'],
+    datasets: [{
+      label: 'Diferença salarial (%)',
+      data: [22,21.5,21.2,20.9,20.5,20],
+      borderColor: '#cc6600',
+      backgroundColor: '#FF9933',
+      pointRadius: 7,
+      borderWidth: 4,
+      tension: 0.4
+    }]
+  }
+});
+</script>
+<h1>Comparação de salário médio</h1>
+
+<canvas id="graficoSalario"></canvas>
+<script>
+const ctxSalario = document.getElementById('graficoSalario');
+
+new Chart(ctxSalario, {
+  type: 'bar',
+  data: {
+    labels: ['Homens', 'Mulheres'],
+    datasets: [{
+      label: 'Salário médio (R$)',
+      data: [4745, 3755],
+      backgroundColor: ['orange','green'],
+      borderWidth: 2
+    }]
+  }
+});
+</script>
+<p>
+Estes gráficos mostram a diferença média salarial entre homens e mulheres no Brasil.
+Mesmo com avanços nos últimos anos, ainda existe uma diferença significativa.
+</p>
+<button onclick="location.href='observacoes.html'">
+proximo
+</button>
+<button onclick="location.href='dados.html'">
+Voltar
+</button>
+<link rel="stylesheet" href="style2.css">
