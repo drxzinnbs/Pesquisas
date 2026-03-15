@@ -1,12 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gráficos</title>
+<link rel="stylesheet" href="style2.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
 <body>
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
 <h1>Diferença salarial entre homens e mulheres</h1>
 
 <canvas id="grafico"></canvas>
-
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <script>
 const ctx = document.getElementById('grafico');
@@ -27,9 +36,11 @@ new Chart(ctx, {
   }
 });
 </script>
+
 <h1>Comparação de salário médio</h1>
 
 <canvas id="graficoSalario"></canvas>
+
 <script>
 const ctxSalario = document.getElementById('graficoSalario');
 
@@ -46,16 +57,19 @@ new Chart(ctxSalario, {
   }
 });
 </script>
+
 <p>
 Estes gráficos mostram a diferença média salarial entre homens e mulheres no Brasil.
 Mesmo com avanços nos últimos anos, ainda existe uma diferença significativa.
 </p>
+
 <button onclick="location.href='observacoes.html'">
 proximo
 </button>
+
 <button onclick="location.href='dados.html'">
 Voltar
 </button>
-<link rel="stylesheet" href="style2.css">
 
 </body>
+</html>
